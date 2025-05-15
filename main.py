@@ -1,6 +1,7 @@
-from src.poesier import gerar_poema
+from src import gerar_poema
 
 def main():
+  print()
   palavra = input("Digite uma palavra ou frase: ")
   poema = gerar_poema(palavra)
   print(f"\nPoema Gerado:\n\n{poema}")

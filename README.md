@@ -10,7 +10,10 @@ Um chatbot criador de poesias que transforma palavras e frases em versos inspira
 - Conta no Google Cloud com a API Google GenAI habilitada.  
 - Chave de API válida.  
 
-## 📦 Instalação  
+## 📦 Instalação 
+
+Versão atual: 2.0 
+
 1. Clone o repositório:  
     ```bash
     git clone https://github.com/Jefhter/Poesier.git
