@@ -1,18 +1,9 @@
-!pip install google-genai
+from src.poesier import gerar_poema
 
-import os
-from google.colab import userdata
-from google import genai
+def main():
+    palavra = input("Digite uma palavra ou frase: ")
+    poema = gerar_poema(palavra)
+    print(f"\nPoema Gerado:\n\n{poema}")
 
-os.environ['GOOGLE_API_KEY'] = userdata.get('GOOGLE_API_KEY')
-client = genai.Client()
-modelo = "gemini-2.0-flash"
-
-def gerar_poema(palavra):
-  requisicao = f"Imagine-se como um Compositor de Poemas. Preciso que vc faça um poema sobre: {palavra}"
-  resposta = client.models.generate_content(model=modelo, contents=requisicao)
-  return resposta.text
-
-palavra = input("Digite uma palavra: ")
-poema = gerar_poema(palavra)
-print(f"Poema Gerado:\n\n{poema}")
+if __name__ == "__main__":
+    main()
