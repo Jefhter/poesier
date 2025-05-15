@@ -8,7 +8,7 @@ API_KEY = os.getenv("GOOGLE_API_KEY")
 MODEL_NAME = "gemini-2.0-flash"
 
 if not API_KEY:
-    raise EnvironmentError("API key not found. Please add it to your .env file.")
+    raise EnvironmentError("API key não encontrada. Por favor adiciona-a em seu arquivo .env.")
 
 client = genai.Client()
 

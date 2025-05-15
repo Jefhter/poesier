@@ -13,7 +13,7 @@ Um chatbot criador de poesias que transforma palavras e frases em versos inspira
 ## 📦 Instalação  
 1. Clone o repositório:  
     ```bash
-    git clone https://github.com/seu-usuario/Poesier.git
+    git clone https://github.com/Jefhter/Poesier.git
     cd Poesier
     ```  
 2. Instale as dependências:  
